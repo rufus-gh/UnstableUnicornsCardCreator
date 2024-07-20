@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'OstrichSans-Heavy';
+  src:
+    url('https://rufus-gh.github.io/fonts/webfonts_OstrichSans-Heavy/OstrichSans-Heavy.ttf.woff') format('woff'),
+    url('https://rufus-gh.github.io/fonts/webfonts_OstrichSans-Heavy/OstrichSans-Heavy.ttf.svg#OstrichSans-Heavy') format('svg'),
+    url('https://rufus-gh.github.io/fonts/webfonts_OstrichSans-Heavy/OstrichSans-Heavy.ttf.eot'),
+    url('https://rufus-gh.github.io/fonts/webfonts_OstrichSans-Heavy/OstrichSans-Heavy.ttf.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Falling Sky Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Falling Sky Light'), url('https://rufus-gh.github.io/fonts/falling_sky/FallingSkyLight.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Falling Sky Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Falling Sky Light'), url('https://rufus-gh.github.io/fonts/falling_sky/FallingSkyLightObl.woff') format('woff');
+}
+
+
+* {
+  margin: 0px;
+}
+
+body {
+  background-image: linear-gradient(135deg, #a6a6a6 25%, #b3b3b3 25%, #b3b3b3 50%, #a6a6a6 50%, #a6a6a6 75%, #b3b3b3 75%, #b3b3b3 100%);
+  background-size: 56.57px 56.57px;
+}
+
+.box {
+  position: absolute;
+  padding: 20px;
+}
+
+.card {
+  width: 320px;
+  height: 449px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.triangle-topleft {
+  width: 0;
+  height: 0;
+  border-top: 66px solid #21bdec;
+  border-top-left-radius: 5px;
+  border-right: 66px solid transparent;
+}
+
+.triangle-bottomright {
+  width: 0;
+  height: 0;
+  border-bottom: 66px solid #21bdec;
+  border-bottom-right-radius: 5px;
+  border-left: 66px solid transparent;
+  position: absolute;
+  top: 403px;
+  left: 274px;
+}
+
+.square {
+  position: absolute;
+  top: 97px;
+  left: 60px;
+  width: 239px;
+  height: 239px;
+  background: black;
+  border: solid 3px;
+  border-radius: 1px;
+  object-fit: cover;
+}
+
+.name {
+  transform: translate(0px, -38px);
+  text-align: center;
+  font-size: 25px;
+  font-family: 'OstrichSans-Heavy';
+}
+
+.icon {
+  content: url("https://rufus-gh.github.io/horn.png");
+  width: 20px;
+  position: absolute;
+
+  -webkit-filter: grayscale(1) invert(1) brightness(100);
+  filter: grayscale(1) invert(1) brightness(100);
+}
+
+.icon.first {
+  transform: translate(12px, -51px);
+}
+
+.icon.second {
+  transform: rotate(180deg) translate(30px, -30px);
+}
+
+.card-type {
+  font-style: italic;
+  position: absolute;
+  top: 358px;
+  left: 60px;
+  font-family: "Falling Sky Light";
+  -moz-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-5deg, 0deg);
+  -webkit-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-5deg, 0deg);
+  -o-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-5deg, 0deg);
+  -ms-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-5deg, 0deg);
+  transform: scale(1) rotate(0deg) translate(0px, 0px) skew(10deg, 0deg);
+  font-size: 12px;
+  color: #21bdec;
+}
+
+.card-description {
+  position: absolute;
+  top: 377px;
+  left: 60px;
+  font-family: "Falling Sky Light";
+  -moz-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(6deg, 0deg);
+  -webkit-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(6deg, 0deg);
+  -o-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(6deg, 0deg);
+  -ms-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(6deg, 0deg);
+  transform: scale(1) rotate(0deg) translate(0px, 0px) skew(6deg, 0deg);
+  font-size: 14px;
+  color: #000;
+  width: 239px;
+}
+
+.inputs {
+  float: right;
+}
+
+input {
+  width: 100%;
+}

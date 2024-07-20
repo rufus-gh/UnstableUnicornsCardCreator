@@ -1,0 +1,37 @@
+<html>
+   <head>
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <div class="box" id="to_download">
+         <div class="card">
+            <div class="triangle-topleft">
+               <img class="icon first">
+            </div>
+            <div class="triangle-bottomright">
+               <img class="icon second">
+            </div>
+            <img id="img" class="square" src="https://i.pinimg.com/736x/33/a9/bc/33a9bc40e342ad2dc53a2bfa4869160a.jpg">
+            <div class="name" id="nameText">
+               HACKERCORN
+            </div>
+            <div class="card-type">
+               Magical Unicorn Card
+            </div>
+            <div class="card-description" id="descText">
+               When this card enters your stable, do something...
+            </div>
+         </div>
+      </div>
+      <div class="inputs">
+         Unicorn Name: <input id="name" type="text"><br>
+         Description: 
+         <textarea id="desc"></textarea>
+         <br>
+         Image (URL): <input type="text" id ="imgPickerURL">
+         <input type="file" id="fileInput">
+         <div id="fileDisplayArea"></div>
+      </div>
+      <script src="script.js"></script>
+   </body>
+</html>
